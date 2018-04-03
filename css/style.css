@@ -1,0 +1,118 @@
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+
+.connectUL{
+	margin: 0;
+	padding: 0;
+	position: absolute;
+}
+
+
+.connect{
+	width: 50px;
+	height: 50px;
+	margin: 10px;
+	background-color: #cccccc;;
+	line-height: 50px;
+	text-align: center;
+	font-size: 30px;
+	list-style: none;
+	float: left;
+	border-radius: 50%;
+	position: relative;
+	z-index: 1;
+}
+
+.connect:before{
+	content: '';
+	width: 100%;
+	height: 100%;
+		border-radius: 50%;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #cccccc;;
+ 	z-index: -1;
+}
+
+.connect:hover:before{
+	background-color: #000000;
+	z-index: -1;
+}
+
+.connect:hover{
+	color: white;
+}
+
+.jumbotron{
+	margin-bottom: 0px;
+	background-image: url(../images/bl.png);
+	background-repeat: repeat;
+	color: white;
+}
+
+a:link{
+	color: #cccccc;
+}
+
+a:visited{
+	color: #cccccc;
+}
+
+a:hover{
+	color: white;
+	    font-weight: bold;
+
+}
+
+a.portLinks:link{
+	color: black;
+}
+
+a.portLinks:visited{
+	color: black;
+}
+
+a.portLinks:hover{
+	color: black;
+	    font-weight: bold;
+
+}
+
+.spacer{
+	margin-top: 50px;
+}
+
+.floater{
+	float: left;
+
+}
+
+.btn-primary{
+	background-color: #cccccc;
+	border: none;
+}
+.btn-primary:hover{
+	background-color: gray;
+	border: none;
+}
+
+.languages{
+	font-size: 10px;
+}
+
+#spacer{
+	
+	height: 200px;
+}
