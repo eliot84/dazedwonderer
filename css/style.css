@@ -1,4 +1,7 @@
 
+body{
+font-family: 'Fredericka the Great', cursive;}
+
 .container{
 	display: grid;
 	grid-template-areas: 
@@ -16,10 +19,22 @@ header{
 	color: white;
 	padding: 5px;
 }
+h1{
+	font-size: 42px;
+	font-weight:normal;
+	text-align: center;
+}
 
-li{
-	display: inline;
+ul{
+	list-style-type: none;
+}
+
+.social{
+	display: block;
+	margin-top: -10px;
 	margin-right: 3px;
+	margin-bottom: 5px;
+	float: right;
 }
 
 a{
@@ -39,7 +54,7 @@ nav{
 
 	text-align: right;
 	font-size: 20px;
-		background-image: url("../images/bl.png");
+	background-image: url("../images/bl.png");
 
 }
 
