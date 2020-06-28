@@ -3,7 +3,7 @@ body{
 font-family: 'Roboto', sans-serif;
 }
 
-.container{
+.mainPageLayout{
 	display: grid;
 	grid-template-areas: 
 		"header  header"
@@ -27,8 +27,10 @@ h1{
 }
 
 .subtitle{
+	font-family: 'Krona One', sans-serif;
 	margin-top: -20px;
 	font-size: 11px;
+	margin-left: 4px;
 }
 
 ul{
@@ -78,7 +80,7 @@ aside{
 
 }
 
-/*
+
 
 .repos{
 	display: grid;
@@ -139,7 +141,7 @@ aside{
 }
 
 
-*/
+
 
 
 
