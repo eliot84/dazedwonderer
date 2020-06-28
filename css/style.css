@@ -11,10 +11,10 @@
 header{
 	grid-area: header;
 	background-image: url("../images/bl.png");
-	height: 150px;
+	height: 100px;
 	width: auto;
 	color: white;
-	padding: 10px;
+	padding: 5px;
 }
 
 li{
@@ -28,10 +28,13 @@ a{
 	color: gray;
 }
 
+a:hover{
+	color: white;
+}
+
 nav{
 	grid-area: nav;
 	padding-left: 10px;
-	padding-bottom: 5px;
 	padding-right: 10px;
 
 	text-align: right;
@@ -53,20 +56,6 @@ aside{
 	font-size: 30px;
 
 }
-
-.fa-linkedin-in:hover{
-	color: black;
-}
-
-.fa-github:hover{
-	color: black;
-}
-
-.fa-stack-overflow:hover{
-	color: black;
-}
-
-
 
 /*
 
