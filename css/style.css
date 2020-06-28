@@ -2,7 +2,7 @@
 body{
 font-family: 'Roboto', sans-serif;
 }
-
+/* ABOUT PAGE */
 .mainPageLayout{
 	display: grid;
 	grid-template-areas: 
@@ -11,15 +11,38 @@ font-family: 'Roboto', sans-serif;
 		"article aside";
 }
 
+/* PORTFOLIO PAGE */
+.portfolioPageLayout{
+	display: grid;
+	grid-template-areas: 
+	   "header header"
+	   "nav    nav"
+	   "main   main"
+}
 
+.main{
+	grid-area: main;
+}
+
+
+/* ALL PAGES */
 header{
 	grid-area: header;
 	background-image: url("../images/bl.png");
 	width: auto;
 	color: white;
 	padding: 10px;
-
 }
+
+nav{
+	grid-area: nav;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: right;
+	font-size: 20px;
+	background-image: url("../images/bl.png");
+}
+
 h1{
 	font-family: 'Krona One', sans-serif;
 	font-size: 35px;
@@ -55,16 +78,7 @@ a:hover{
 	color: white;
 }
 
-nav{
-	grid-area: nav;
-	padding-left: 10px;
-	padding-right: 10px;
 
-	text-align: right;
-	font-size: 20px;
-	background-image: url("../images/bl.png");
-
-}
 
 article{
 	grid-area: article;
