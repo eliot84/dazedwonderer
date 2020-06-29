@@ -33,6 +33,22 @@
 				/*	background-size: contain; */
 }
 
+.projectLINKS{
+	display: inline-block;
+	color: white;
+	background-color: gray;
+	text-align: center;
+	width: 250px;
+	margin-bottom: 10px;
+	border-radius: 30px;
+}
+
+.projectLINKS:hover{
+	color: white;
+    background-image: url("../images/bl.png");
+
+}
+
 
 /* ALL PAGES */
 body{
