@@ -23,7 +23,14 @@
 
 /* PROJECT PAGE */
 .projectIMG{
-	width: 30%;
+	border-radius: 30px;
+	width: 300px;
+	height: auto;
+		/*background-repeat: no-repeat;
+					background-position: center center;
+					/*background-attachment: fixed;*/
+					/*background-size: cover;*/
+				/*	background-size: contain; */
 }
 
 
