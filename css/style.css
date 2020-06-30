@@ -5,7 +5,8 @@
 	grid-template-areas: 
 		"header  header"
 		"nav     nav"
-		"article aside";
+		"article aside"
+		"footer  footer"
 }
 
 /* PORTFOLIO PAGE */
@@ -52,19 +53,45 @@
 
 /* ALL PAGES */
 body{
-font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+}
+
+.container{
+	display: grid;
+	grid-template-rows: auto auto 1fr auto;
+	height: 100vh;
+
+}
+
+footer{
+	grid-area: footer;
+    background-image: url("../images/bl.png");
+    height: 100px;
+	color: gray;
+	font-size: 11px;
+	text-align: center;
+	line-height: 100px;
+}
+
+.subtitle{
+	font-family: 'Krona One', sans-serif;
+	margin-top: -20px;
+	font-size: 11px;
+	margin-left: 4px;
 }
 
 header{
 	grid-area: header;
 	background-image: url("../images/bl.png");
 	width: auto;
+	height: 150px;
 	color: white;
 	padding: 10px;
 }
 
 nav{
 	grid-area: nav;
+	height: 100px;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: right;
@@ -78,12 +105,13 @@ h1{
 	font-weight:normal;
 }
 
-.subtitle{
+h2{
 	font-family: 'Krona One', sans-serif;
-	margin-top: -20px;
-	font-size: 11px;
-	margin-left: 4px;
+	font-size: 25px;
+	font-weight:normal;	
 }
+
+
 
 ul{
 	list-style-type: none;
@@ -109,10 +137,14 @@ a:hover{
 
 article{
 	grid-area: article;
+	height: auto;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 aside{
 	grid-area: aside;
+	padding-right: 100px;
 }
 
 .socialMenu{
@@ -187,59 +219,6 @@ aside{
 
 
 
-
-.footer {
- /* position: fixed;*/
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
-  background-color: #f5f5f5;
-  text-align: center;
-  margin-top: 100px;
-}
-
-/*
-.connectUL{
-	height: 50px;
-}
-
-
-*/
-
-
-/*
-a:link{
-	color: #cccccc;
-}
-*/
-/*a:visited{
-	color: #cccccc;
-}
-
-a:hover{
-	color: white;
-	    font-weight: bold;
-
-}
-*/
-
-/*
-a.portLinks:link{
-	color: black;
-}
-
-a.portLinks:visited{
-	color: black;
-}
-
-a.portLinks:hover{
-	color: black;
-	    font-weight: bold;
-
-}
-*/
 
 .spacer{
 	margin-top: 50px;

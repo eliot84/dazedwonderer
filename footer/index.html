@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+  <body>
+    <div class="container">
+      <header>header      </header>
+
+      <nav>nav
+        <!-- Navigation -->
+      </nav>
+
+      <main>
+        <!-- Main content -->
+      </main>
+
+      <aside>aside
+        <!-- Sidebar / Ads -->
+      </aside>
+
+      <footer>footer
+        <!-- Footer content -->
+      </footer>
+    </div>
+
+<style type="text/css">
+    .container {
+  display: grid;
+
+  grid-template-areas:
+    "header header header"
+    "nav content side"
+    "footer footer footer";
+
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+
+  height: 100vh;
+}
+
+header {
+  grid-area: header;
+  height: 200px;
+  background-color: gray;
+}
+
+nav {
+  grid-area: nav;
+  margin-left: 0.5rem;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: side;
+  margin-right: 0.5rem;
+}
+
+footer {
+  grid-area: footer;
+  height: 100px;
+  background-color: black;
+}
+</style>
+  </body>
+</html>
+
