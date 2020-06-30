@@ -16,10 +16,13 @@
 	   "header header"
 	   "nav    nav"
 	   "main   main"
+	   "footer footer"
 }
 
 .main{
 	grid-area: main;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 
 /* PROJECT PAGE */
@@ -84,7 +87,7 @@ header{
 	grid-area: header;
 	background-image: url("../images/bl.png");
 	width: auto;
-	height: 150px;
+	height: 100px;
 	color: white;
 	padding: 10px;
 }
@@ -114,7 +117,9 @@ h2{
 
 
 ul{
-	list-style-type: none;
+	padding: 0;
+    list-style-type: none;
+
 }
 
 .social{
