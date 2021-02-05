@@ -9,6 +9,7 @@
 		"footer  footer"
 }
 
+
 /* PORTFOLIO PAGE */
 .portfolioPageLayout{
 	display: grid;
@@ -55,8 +56,28 @@
 
 }
 
-
 /* ALL PAGES */
+
+.imageRound{
+	height: 200px;
+	width: 200px;
+	background-image: url("../images/me.jpg");
+    background-position: cover;
+	background-size: cover;
+	border-radius: 25px;
+	    /*anime*/
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.imageRound:hover{
+	
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+
+}
 body{
 	font-family: 'Roboto', sans-serif;
 }
@@ -267,4 +288,28 @@ aside{
 #spacer{
 	
 	height: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  /* For mobile phones: */
+ article{
+	grid-area: article;
+	height: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+
+}
+.mainPageLayout{
+ 	grid-template-areas: 
+		"header"
+		"nav"
+		"article"
+		"aside"
+		"footer"
+ }
+
+ .imageRound{
+ 	margin-right: auto;
+ 	margin-left: auto;
+ }
 }
